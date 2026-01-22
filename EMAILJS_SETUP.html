@@ -1,0 +1,88 @@
+<!-- 
+    CONFIGURATION EMAILJS
+    
+    Pour activer le formulaire de contact fonctionnel avec EmailJS:
+    
+    1. Créez un compte sur https://www.emailjs.com/
+    2. Dans votre dashboard:
+       - Allez dans "Email Services"
+       - Connectez votre Gmail ou autre email service
+       - Copiez votre SERVICE_ID
+    
+    3. Créez un template:
+       - Allez dans "Email Templates"
+       - Créez un nouveau template
+       - Variables à utiliser:
+         {{from_name}}     - Nom du visiteur
+         {{from_email}}    - Email du visiteur
+         {{subject}}       - Sujet du message
+         {{message}}       - Corps du message
+         {{to_email}}      - Votre email
+       - Copiez le TEMPLATE_ID
+    
+    4. Allez dans "Account" et copiez votre PUBLIC_KEY
+    
+    5. Remplacez les valeurs dans index.html:
+       - Line: emailjs.init('VOTRE_PUBLIC_KEY');
+    
+    6. Décommentez le code dans js/main.js pour activer EmailJS
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Configuration EmailJS</title>
+</head>
+<body>
+    <h1>🔧 Configuration EmailJS</h1>
+    
+    <h2>Étapes d'installation:</h2>
+    
+    <ol>
+        <li>Accédez à https://www.emailjs.com/ et créez un compte</li>
+        <li>Connectez votre service email (Gmail, Outlook, etc.)</li>
+        <li>Créez un template avec ces variables:
+            <ul>
+                <li>{{from_name}}</li>
+                <li>{{from_email}}</li>
+                <li>{{subject}}</li>
+                <li>{{message}}</li>
+                <li>{{to_email}}</li>
+            </ul>
+        </li>
+        <li>Copiez vos clés:
+            <ul>
+                <li>PUBLIC_KEY</li>
+                <li>SERVICE_ID</li>
+                <li>TEMPLATE_ID</li>
+            </ul>
+        </li>
+        <li>Insérez dans index.html (section head):
+            <code>&lt;script&gt;emailjs.init('VOTRE_PUBLIC_KEY');&lt;/script&gt;</code>
+        </li>
+        <li>Décommentez le code dans js/main.js</li>
+    </ol>
+    
+    <h2>Alternative: Netlify Forms</h2>
+    <p>Si vous déployez sur Netlify, vous pouvez aussi utiliser:</p>
+    <pre>
+&lt;form name="contact" method="POST" netlify&gt;
+  &lt;input name="name" required /&gt;
+  &lt;input name="email" type="email" required /&gt;
+  &lt;textarea name="message" required&gt;&lt;/textarea&gt;
+  &lt;button type="submit"&gt;Envoyer&lt;/button&gt;
+&lt;/form&gt;
+    </pre>
+    
+    <h2>Alternative: Formspree</h2>
+    <p>Ou utilisez Formspree (https://formspree.io/)</p>
+    <pre>
+&lt;form action="https://formspree.io/f/YOUR_FORM_ID" method="POST"&gt;
+  &lt;input name="name" required /&gt;
+  &lt;input name="email" type="email" required /&gt;
+  &lt;textarea name="message" required&gt;&lt;/textarea&gt;
+  &lt;button type="submit"&gt;Envoyer&lt;/button&gt;
+&lt;/form&gt;
+    </pre>
+</body>
+</html>

@@ -1,0 +1,323 @@
+{
+  "portfolio": {
+    "metadata": {
+      "title": "Mon Portfolio Professionnel",
+      "author": "Votre Nom",
+      "version": "1.0.0",
+      "description": "Portfolio professionnel modern - Développeur Web & Mobile",
+      "language": "fr",
+      "created": "2024-01-20"
+    },
+    "profile": {
+      "firstName": "Votre",
+      "lastName": "Nom",
+      "title": "Développeur Web & Mobile",
+      "description": "Je crée des solutions web modernes, performantes et innovantes.",
+      "email": "contact@example.com",
+      "phone": "+33 6 12 34 56 78",
+      "location": "Paris, France",
+      "image": "assets/images/ma-photo.jpg",
+      "cv": "https://via.placeholder.com/cv.pdf"
+    },
+    "socials": {
+      "linkedin": "https://linkedin.com/in/votre-profil",
+      "github": "https://github.com/votre-username",
+      "twitter": "https://twitter.com/votre-handle",
+      "email": "contact@example.com"
+    },
+    "about": {
+      "title": "À propos de moi",
+      "description": "Je suis un développeur passionné par les nouvelles technologies et l'innovation...",
+      "yearsOfExperience": 5,
+      "projectsCompleted": 20,
+      "technologiesMastered": 15,
+      "clientsSatisfied": 10,
+      "softSkills": [
+        "Créativité",
+        "Communication",
+        "Collaboration",
+        "Résolution de problèmes",
+        "Gestion de projet",
+        "Apprentissage rapide"
+      ]
+    },
+    "skills": {
+      "frontend": [
+        {
+          "name": "HTML5 / CSS3",
+          "level": "Avancé",
+          "percentage": 95
+        },
+        {
+          "name": "JavaScript (Vanilla)",
+          "level": "Avancé",
+          "percentage": 90
+        },
+        {
+          "name": "React.js",
+          "level": "Avancé",
+          "percentage": 85
+        },
+        {
+          "name": "Vue.js",
+          "level": "Intermédiaire",
+          "percentage": 75
+        },
+        {
+          "name": "Tailwind CSS / Bootstrap",
+          "level": "Avancé",
+          "percentage": 88
+        }
+      ],
+      "backend": [
+        {
+          "name": "PHP",
+          "level": "Avancé",
+          "percentage": 85
+        },
+        {
+          "name": "Node.js / Express.js",
+          "level": "Avancé",
+          "percentage": 82
+        },
+        {
+          "name": "Laravel",
+          "level": "Intermédiaire",
+          "percentage": 78
+        },
+        {
+          "name": "Python",
+          "level": "Intermédiaire",
+          "percentage": 72
+        },
+        {
+          "name": "API REST / GraphQL",
+          "level": "Avancé",
+          "percentage": 80
+        }
+      ],
+      "databases": [
+        {
+          "name": "MySQL / PostgreSQL",
+          "level": "Avancé",
+          "percentage": 88
+        },
+        {
+          "name": "MongoDB",
+          "level": "Intermédiaire",
+          "percentage": 78
+        },
+        {
+          "name": "Firebase / Firestore",
+          "level": "Intermédiaire",
+          "percentage": 75
+        },
+        {
+          "name": "Redis",
+          "level": "Débutant",
+          "percentage": 60
+        }
+      ],
+      "tools": [
+        {
+          "name": "Git / GitHub",
+          "level": "Avancé",
+          "percentage": 92
+        },
+        {
+          "name": "Docker",
+          "level": "Intermédiaire",
+          "percentage": 76
+        },
+        {
+          "name": "Linux / Terminal",
+          "level": "Avancé",
+          "percentage": 84
+        },
+        {
+          "name": "AWS / Cloud",
+          "level": "Intermédiaire",
+          "percentage": 70
+        },
+        {
+          "name": "Webpack / Build Tools",
+          "level": "Intermédiaire",
+          "percentage": 73
+        }
+      ]
+    },
+    "education": [
+      {
+        "id": 1,
+        "year": "2019-2022",
+        "title": "Baccalauréat Général",
+        "school": "Lycée [Nom du Lycée], [Ville]",
+        "specialties": "Mathématiques, Numérique et Sciences Informatiques, Physique-Chimie",
+        "description": "Mention Très Bien avec félicitations du jury."
+      },
+      {
+        "id": 2,
+        "year": "2022-2023",
+        "title": "BTS SIO SLAM - 1ère année",
+        "school": "Institut [Nom], [Ville]",
+        "specialties": "Solutions Logicielles et Applications Métier",
+        "description": "Formation en développement d'applications et gestion de projets informatiques."
+      },
+      {
+        "id": 3,
+        "year": "2023-2024",
+        "title": "BTS SIO SLAM - 2ème année",
+        "school": "Institut [Nom], [Ville]",
+        "specialties": "Développement full-stack",
+        "description": "Approfondissement en développement full-stack. Projet de fin d'études sur une application web complète."
+      }
+    ],
+    "experiences": [
+      {
+        "id": 1,
+        "title": "Stagiaire Développeur Full-Stack",
+        "company": "TechCorp Solutions",
+        "location": "Paris",
+        "startDate": "2024-02",
+        "endDate": "2024-06",
+        "type": "Stage (5 mois)",
+        "description": "Développement d'une plateforme de gestion de projets web utilisant React et Node.js.",
+        "tasks": [
+          "Création d'une API REST complète avec Express.js et MongoDB",
+          "Développement du front-end avec React et Tailwind CSS",
+          "Intégration de système d'authentification JWT",
+          "Participation aux meetings agiles et revues de code"
+        ],
+        "technologies": ["React", "Node.js", "MongoDB", "JWT"]
+      },
+      {
+        "id": 2,
+        "title": "Développeur Frontend Junior",
+        "company": "Digital Agency Pro",
+        "location": "Lyon",
+        "startDate": "2023-09",
+        "endDate": "2024-01",
+        "type": "Stage (4 mois)",
+        "description": "Développement de sites web responsifs pour différents clients.",
+        "tasks": [
+          "Création de sites web modernes et performants avec HTML, CSS, JavaScript",
+          "Optimisation du responsive design pour mobile, tablette et desktop",
+          "Collaboration avec les designers UX/UI",
+          "Mise en production et maintenance des sites"
+        ],
+        "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap"]
+      },
+      {
+        "id": 3,
+        "title": "Développeur Backend PHP",
+        "company": "WebSolutions Inc",
+        "location": "Toulouse",
+        "startDate": "2023-06",
+        "endDate": "2023-08",
+        "type": "Stage (3 mois)",
+        "description": "Développement et maintenance d'applications web avec PHP et Laravel.",
+        "tasks": [
+          "Développement de fonctionnalités backend avec Laravel",
+          "Gestion des bases de données MySQL",
+          "Création d'API REST pour les clients mobiles",
+          "Tests unitaires et debugging d'applications existantes"
+        ],
+        "technologies": ["PHP", "Laravel", "MySQL", "API REST"]
+      },
+      {
+        "id": 4,
+        "title": "Support Technique / Developer",
+        "company": "StartUp Innovante",
+        "location": "Bordeaux",
+        "startDate": "2023-03",
+        "endDate": "2023-05",
+        "type": "Stage (3 mois)",
+        "description": "Support technique et amélioration d'une plateforme SaaS.",
+        "tasks": [
+          "Support client technique et gestion des bugs",
+          "Amélioration du dashboard utilisateur",
+          "Documentation technique et aide utilisateur",
+          "Amélioration des performances de l'application"
+        ],
+        "technologies": ["JavaScript", "Python", "SQL", "Jira"]
+      }
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "name": "Plateforme E-Commerce",
+        "description": "Plateforme e-commerce complète avec panier, paiement Stripe, gestion d'inventaire et panel administrateur.",
+        "image": "https://via.placeholder.com/400x300/667eea/ffffff?text=E-Commerce+Platform",
+        "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
+        "github": "https://github.com/",
+        "liveUrl": "https://example.com",
+        "demoUrl": "https://example.com/demo"
+      },
+      {
+        "id": 2,
+        "name": "Gestionnaire de Tâches",
+        "description": "Application de gestion de tâches avec synchronisation en temps réel, catégories et rappels.",
+        "image": "https://via.placeholder.com/400x300/764ba2/ffffff?text=App+Gestion+Taches",
+        "technologies": ["Vue.js", "Firebase", "Vuetify", "PWA"],
+        "github": "https://github.com/",
+        "liveUrl": "https://example.com",
+        "demoUrl": "https://example.com/demo"
+      },
+      {
+        "id": 3,
+        "name": "Blog Personnel",
+        "description": "Blog personnel avec articles, commentaires, système de notation et recherche avancée.",
+        "image": "https://via.placeholder.com/400x300/f093fb/ffffff?text=Blog+Personnel",
+        "technologies": ["PHP", "Laravel", "MySQL", "TailwindCSS"],
+        "github": "https://github.com/",
+        "liveUrl": "https://example.com",
+        "demoUrl": "https://example.com/demo"
+      },
+      {
+        "id": 4,
+        "name": "Dashboard Analytics",
+        "description": "Dashboard de visualisation de données en temps réel avec graphiques interactifs et exports.",
+        "image": "https://via.placeholder.com/400x300/4facfe/ffffff?text=Dashboard+Analytics",
+        "technologies": ["React", "Chart.js", "Node.js", "WebSocket"],
+        "github": "https://github.com/",
+        "liveUrl": "https://example.com",
+        "demoUrl": "https://example.com/demo"
+      },
+      {
+        "id": 5,
+        "name": "Application Météo",
+        "description": "Application météo avec géolocalisation, prévisions et historique climatique.",
+        "image": "https://via.placeholder.com/400x300/43e97b/ffffff?text=App+Meteo",
+        "technologies": ["React Native", "API OpenWeather", "Geolocation", "Redux"],
+        "github": "https://github.com/",
+        "liveUrl": "https://example.com",
+        "demoUrl": "https://example.com/demo"
+      },
+      {
+        "id": 6,
+        "name": "Plateforme d'Apprentissage",
+        "description": "Plateforme LMS avec cours, vidéos, quiz et certificats. Système de paiement intégré.",
+        "image": "https://via.placeholder.com/400x300/fa709a/ffffff?text=Plateforme+Apprentissage",
+        "technologies": ["Next.js", "PostgreSQL", "Stripe", "AWS S3"],
+        "github": "https://github.com/",
+        "liveUrl": "https://example.com",
+        "demoUrl": "https://example.com/demo"
+      }
+    ],
+    "design": {
+      "colors": {
+        "primary": "#667eea",
+        "primaryLight": "#764ba2",
+        "secondary": "#f093fb",
+        "accent": "#4facfe",
+        "dark": "#1a1a1a",
+        "light": "#f8f9fa",
+        "gray": "#6c757d"
+      },
+      "fonts": {
+        "primary": "Poppins",
+        "display": "Playfair Display"
+      }
+    }
+  }
+}

@@ -1,0 +1,418 @@
+/* =====================================
+   GUIDE D'UTILISATION DU PORTFOLIO
+   ===================================== */
+
+/*
+   Ce fichier explique comment utiliser et personnaliser votre portfolio.
+   Il n'est pas à inclure dans le projet final.
+   C'est juste un guide de référence.
+*/
+
+/*
+   ==================== 1. STRUCTURE DU PROJET ====================
+   
+   portfolio/
+   ├── index.html              ← Fichier principal (toutes les sections)
+   ├── css/
+   │   └── styles.css          ← Tous les styles et animations
+   ├── js/
+   │   └── main.js             ← Toute l'interactivité JavaScript
+   ├── assets/
+   │   ├── images/             ← Vos photos et captures d'écran
+   │   └── icons/              ← Icônes optionnelles
+   └── README.md               ← Documentation
+   
+   ==================== 2. COULEURS PRINCIPALES ====================
+   
+   À modifier dans css/styles.css - Section :root
+   
+   Actuellement :
+   --primary: #667eea;         (Bleu/Violet principal)
+   --primary-light: #764ba2;   (Violet foncé)
+   --secondary: #f093fb;       (Rose)
+   --accent: #4facfe;          (Bleu ciel)
+   
+   Exemples de palettes modernes :
+   - Dégradé tech : #667eea → #764ba2
+   - Dégradé sunset : #ff6b6b → #ffd93d
+   - Dégradé ocean : #1e3c72 → #2a5298
+   - Dégradé forest : #134e5e → #71b280
+   
+   ==================== 3. SECTIONS À PERSONNALISER ====================
+   
+   SECTION 1 : ACCUEIL (Hero)
+   ─────────────────────────
+   Localisation : index.html, ligne ~100-160
+   
+   À changer :
+   - Photo profil : Remplacez l'URL du placeholder
+   - Titre : "Bonjour, je suis [Prénom] [Nom]"
+   - Sous-titre : "Développeur Web & Mobile Passionné"
+   - Description : Votre pitch professionnel
+   - Boutons : Texte et liens
+   - Réseaux sociaux : Vos liens
+   
+   Code HTML à modifier :
+   ```html
+   <img src="https://via.placeholder.com/250/667eea/ffffff?text=Photo+Profil" 
+        alt="Photo profil" class="profile-image">
+   
+   Devient :
+   <img src="assets/images/ma-photo.jpg" alt="Photo profil" class="profile-image">
+   ```
+   
+   SECTION 2 : À PROPOS
+   ─────────────────────
+   Localisation : index.html, ligne ~161-270
+   
+   À changer :
+   - Qui suis-je ? Texte descriptif
+   - Soft skills : Remplacez les badges
+   - Statistiques : Mettez à jour les chiffres (années, projets, etc)
+   - Compétences : Listez vos vraies technologies
+   
+   Modifier les statistiques :
+   ```html
+   <div class="stat-card">
+       <h3>5+</h3>              ← Nombre d'années
+       <p>Années d'expérience</p>
+   </div>
+   ```
+   
+   SECTION 3 : PARCOURS SCOLAIRE
+   ──────────────────────────────
+   Localisation : index.html, ligne ~271-350
+   
+   À changer :
+   - Dates : Vos vraies dates de scolarité
+   - Établissements : Noms et villes réels
+   - Descriptions : Ce que vous avez appris
+   
+   Structure d'un élément timeline :
+   ```html
+   <div class="timeline-item">
+       <div class="timeline-dot"></div>
+       <div class="timeline-content">
+           <div class="timeline-date">2023-2024</div>
+           <h3>Votre diplôme</h3>
+           <p class="timeline-school">École, Ville</p>
+           <p class="timeline-description">Description...</p>
+       </div>
+   </div>
+   ```
+   
+   SECTION 4 : EXPÉRIENCES PROFESSIONNELLES
+   ──────────────────────────────────────────
+   Localisation : index.html, ligne ~351-500
+   
+   À changer :
+   - Titre du poste
+   - Nom de l'entreprise
+   - Localisation
+   - Dates (début - fin)
+   - Type de contrat
+   - Description des missions (liste à puces)
+   - Technologies utilisées
+   
+   4 expériences fictives sont fournies. À remplacer par vos vraies expériences.
+   
+   Structure d'une expérience :
+   ```html
+   <div class="experience-card">
+       <div class="exp-header">
+           <div class="exp-logo">
+               <i class="fas fa-laptop-code"></i>  ← Icône (changez si nécessaire)
+           </div>
+           <div class="exp-info">
+               <h3 class="exp-title">Titre du poste</h3>
+               <p class="exp-company">Nom Entreprise</p>
+               <p class="exp-date"><i class="fas fa-calendar"></i> Dates</p>
+               <span class="exp-type">Stage/CDI/CDD</span>
+           </div>
+       </div>
+       <div class="exp-description">
+           <p>Description générale</p>
+           <ul class="exp-tasks">
+               <li>Mission 1</li>
+               <li>Mission 2</li>
+           </ul>
+           <div class="exp-tech">
+               <span>Technologie 1</span>
+               <span>Technologie 2</span>
+           </div>
+       </div>
+   </div>
+   ```
+   
+   SECTION 5 : PROJETS
+   ────────────────────
+   Localisation : index.html, ligne ~501-700
+   
+   À changer :
+   - Images/screenshots : 6 projets fournis
+   - Noms de projets
+   - Descriptions
+   - Technologies utilisées
+   - Liens (GitHub, site, démo)
+   
+   Structure d'une carte projet :
+   ```html
+   <div class="project-card">
+       <div class="project-image">
+           <img src="https://via.placeholder.com/400x300/667eea/ffffff?text=Votre+Projet"
+                alt="Nom du projet">
+       </div>
+       <div class="project-content">
+           <h3 class="project-title">Nom du projet</h3>
+           <p class="project-description">Description courte...</p>
+           <div class="project-tech">
+               <span>Tech1</span>
+               <span>Tech2</span>
+           </div>
+           <div class="project-links">
+               <a href="https://github.com/..." title="GitHub"><i class="fab fa-github"></i></a>
+               <a href="https://..." title="Site Live"><i class="fas fa-globe"></i></a>
+           </div>
+       </div>
+   </div>
+   ```
+   
+   SECTION 6 : COMPÉTENCES DÉTAILLÉES
+   ───────────────────────────────────
+   Localisation : index.html, ligne ~701-850
+   
+   À changer :
+   - Pourcentages des barres de progression
+   - Niveaux (Débutant, Intermédiaire, Avancé)
+   - Listes de compétences
+   
+   Modifier le pourcentage :
+   ```html
+   <div class="progress-fill" style="width: 85%"></div>
+   
+   ← Changez 85% selon votre niveau
+   ```
+   
+   SECTION 7 : CONTACT
+   ────────────────────
+   Localisation : index.html, ligne ~851-950
+   
+   À changer :
+   - Email : contact@example.com
+   - Téléphone : +33612345678
+   - Localisation : Votre ville
+   - Liens réseaux sociaux
+   - Le formulaire (optionnel avec Formspree)
+   
+   ==================== 4. FICHIERS CSS ====================
+   
+   css/styles.css contient :
+   
+   ✓ Variables CSS (:root) - Couleurs, espacements, animations
+   ✓ Réinitialisation & styles de base
+   ✓ Typographie
+   ✓ Utilités (container, section, boutons)
+   ✓ Navigation & styles globaux
+   ✓ Styles pour chaque section
+   ✓ Animations (@keyframes)
+   ✓ Responsive design (media queries)
+   
+   Pour changer les couleurs rapidement :
+   1. Ouvrez css/styles.css
+   2. Allez à la ligne 5 (section :root)
+   3. Modifiez les variables --primary, --secondary, etc.
+   
+   Pour améliorer le responsive :
+   1. Cherchez @media queries à la fin du fichier
+   2. Ajustez les breakpoints si nécessaire
+   
+   ==================== 5. FICHIERS JAVASCRIPT ====================
+   
+   js/main.js contient :
+   
+   ✓ Navigation (sticky navbar, menu mobile)
+   ✓ Smooth scroll
+   ✓ Animations au scroll (IntersectionObserver)
+   ✓ Compteurs animés
+   ✓ Formulaire de contact
+   ✓ Système de notifications
+   ✓ Parallax effect
+   ✓ Scroll to top button
+   ✓ Lazy loading images
+   ✓ Dark mode (optionnel)
+   
+   Pour ajouter une nouvelle fonctionnalité :
+   1. Créez une fonction bien documentée
+   2. Appelez-la au moment opportun (DOMContentLoaded, scroll, etc)
+   3. Testez dans tous les navigateurs
+   
+   ==================== 6. IMAGES & ASSETS ====================
+   
+   Structure recommandée :
+   
+   assets/
+   ├── images/
+   │   ├── ma-photo.jpg (250x250px)
+   │   ├── projet-1.png
+   │   ├── projet-2.png
+   │   ├── projet-3.png
+   │   ├── projet-4.png
+   │   ├── projet-5.png
+   │   ├── projet-6.png
+   │   ├── logo-entreprise-1.png
+   │   ├── logo-entreprise-2.png
+   │   └── logo-entreprise-3.png
+   └── icons/
+       └── (optionnel - SVG ou PNG)
+   
+   Recommandations pour les images :
+   - Photo profil : 250x250px, format JPG/PNG
+   - Projets : 400x300px, format JPG/PNG
+   - Logos : 70x70px, format PNG avec transparence
+   - Compresser avant upload (TinyPNG, ImageOptim)
+   - Utiliser des formats optimisés (WebP si possible)
+   
+   ==================== 7. DÉPLOIEMENT ====================
+   
+   Option 1 : GitHub Pages (Gratuit)
+   ───────────────────────────────
+   1. Créez un repository nommé portfolio
+   2. Poussez votre code : git push
+   3. Allez dans Settings → Pages
+   4. Sélectionnez "main branch" et Save
+   5. Votre site sera accessible à https://[username].github.io/portfolio
+   
+   Option 2 : Netlify (Gratuit + Plus de fonctionnalités)
+   ─────────────────────────────────────────────────────
+   1. Allez sur netlify.com
+   2. Créez un compte
+   3. Connectez GitHub
+   4. Sélectionnez le repository portfolio
+   5. Deploy automatique !
+   
+   Option 3 : Vercel (Gratuit + Très rapide)
+   ──────────────────────────────────────────
+   1. Allez sur vercel.com
+   2. Créez un compte
+   3. Importez votre repository GitHub
+   4. Vercel déploie automatiquement
+   
+   Option 4 : Votre propre serveur
+   ─────────────────────────────────
+   1. Louer un hosting (OVH, Ionos, SiteGround, etc)
+   2. Accéder au FTP
+   3. Upload les fichiers
+   4. Votre domaine pointe vers le hosting
+   
+   ==================== 8. FONCTIONNALITÉS BONUS ====================
+   
+   Dark Mode (Désactivé par défaut)
+   ────────────────────────────────
+   Décommenter dans js/main.js pour activer :
+   
+   ```javascript
+   const darkModeToggle = document.createElement('button');
+   darkModeToggle.className = 'dark-mode-toggle';
+   darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+   document.body.appendChild(darkModeToggle);
+   ```
+   
+   Formulaire de contact vrai (avec Formspree)
+   ────────────────────────────────────────────
+   1. Allez sur formspree.io
+   2. Créez un compte
+   3. Créez un formulaire et notez l'ID
+   4. Remplacez dans index.html :
+   
+   ```html
+   <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+   ```
+   
+   ==================== 9. CHECKLIST FINALE ====================
+   
+   Avant de déployer, vérifiez :
+   
+   □ Toutes les informations personnelles sont mises à jour
+   □ Toutes les photos sont optimisées et compressées
+   □ Tous les liens (réseaux, GitHub, démo) sont corrects
+   □ Le formulaire de contact fonctionne
+   □ Responsif testé sur mobile, tablette, desktop
+   □ Tous les navigateurs (Chrome, Firefox, Safari, Edge)
+   □ Les animations fonctionnent sans ralentissement
+   □ Les icônes FontAwesome s'affichent
+   □ Les polices Google se chargent
+   □ Pas d'erreurs dans la console (F12)
+   □ Vitesse de chargement acceptable
+   □ Les appels à l'action (boutons) mènent où il faut
+   □ Footer et copyright sont corrects
+   
+   ==================== 10. OPTIMISATIONS SUPPLÉMENTAIRES ====================
+   
+   Pour aller plus loin :
+   
+   SEO Optimization
+   ────────────────
+   - Ajouter des meta descriptions
+   - Optimiser les alt text des images
+   - Ajouter des données structurées (Schema.org)
+   - Sitemap.xml
+   - robots.txt
+   
+   Performance
+   ────────────
+   - Minifier CSS et JS
+   - Lazy loading images
+   - Compression gzip
+   - Cache HTTP
+   - CDN pour les assets
+   
+   Accessibilité
+   ──────────────
+   - Contraste des couleurs
+   - Attributs ARIA
+   - Navigation clavier
+   - Descriptifs images
+   
+   Analytics
+   ──────────
+   - Google Analytics
+   - Hotjar (heatmaps)
+   - Convertkit (emails)
+   
+*/
+
+/* =====================================
+   REMARQUES IMPORTANTES
+   ===================================== */
+
+/*
+   1. Ce fichier GUIDE.CSS n'est PAS importé dans index.html
+      C'est juste une documentation en CSS pour vos références
+   
+   2. Pour un vrai projet, supprimez ce fichier et gardez only :
+      - index.html
+      - css/styles.css
+      - js/main.js
+      - README.md
+      - Dossier assets/
+   
+   3. Après chaque modification, testez :
+      - Actualiser la page (Ctrl+Shift+R pour hard refresh)
+      - Vérifier la console (F12 > Console)
+      - Tester le responsive (F12 > Device Emulation)
+   
+   4. Gardez une copie locale de votre portfolio
+      Utilisez Git pour versionner vos changements
+   
+   5. Mettez à jour régulièrement :
+      - Vos projets
+      - Votre CV/Expériences
+      - Vos compétences
+      - Votre description
+   
+   6. Interagissez avec votre portfolio :
+      - Partagez-le sur les réseaux
+      - Mettez le lien dans votre email
+      - Incluez-le dans vos candidatures
+      - Faites-le connaître !
+*/
